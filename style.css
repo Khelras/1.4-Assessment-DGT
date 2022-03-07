@@ -135,3 +135,15 @@ li a {
 .banner .banner-text h1{
     color: #fff;
 }
+
+.info {
+    max-width: 750px;
+    margin: 100px auto;
+    font-size: 1.125em;
+}
+  
+.info .corgi {
+    float: left;
+    margin: 0 0.5em 0.5em 0;
+    line-height: 0;
+}
