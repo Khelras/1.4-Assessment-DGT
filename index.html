@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
+        <script src="script.js"></script> 
         <header>
             <div class="navbar">
                 <ul>
@@ -24,7 +25,6 @@
                         <div class="dropdown-content">
                             <a href="events/fundraise.html">Fundraising</a>
                             <a href="events/expo.html">Animal Expo</a>
-                            <a href="events/safari.html">Safari</a>
                         </div>
                     </div>
                 </ul>
@@ -37,7 +37,7 @@
             </div>
         </div>
         <div class="info">
-            <img src="./img/corgi doggy.jpg" width="400px" class="corgi">
+            <img src="./img/labrador retriever.jpg" width="400px" class="labrador">
             <div class="infoText">
                 dog person human meat tasty pork bun sausage roll spaghetti pasta pie mints bread toast lettuce eggs tomato potato burger 
                 salmon tuna cat fish food pineapple apple steak smoothies um salad ribs egg bacon lamb tacos avocado burrito init air conditioning 
@@ -48,6 +48,37 @@
                 sees me placeholder text hand sanitiser input bee movie script in this paragraph of a thesis of an essay this sentence is so good that 
                 english teacher would make me teach for them because I am just too good at my job.
             </div>
+        </div>
+        <div class="slideshow-container">
+            <div class="slideshow fade">
+                <div class="slideshow-numbertext">1 / 4</div>
+                <img src="img/Slideshow/img1.jpg" style="width:100%">
+                <div class="slideshow-text">Dog</div>
+            </div>
+            <div class="slideshow fade">
+                <div class="slideshow-numbertext">2 / 4</div>
+                <img src="img/Slideshow/img2.jpg" style="width:100%">
+                <div class="slideshow-text">Cat</div>
+            </div>
+            <div class="slideshow fade">
+                <div class="slideshow-numbertext">3 / 4</div>
+                <img src="img/Slideshow/img3.jpg" style="width:100%">
+                <div class="slideshow-text">Cat</div>
+            </div>
+            <div class="slideshow fade">
+                <div class="slideshow-numbertext">4 / 4</div>
+                <img src="img/Slideshow/img4.jpg" style="width:100%">
+                <div class="slideshow-text">Dog</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="slideshow-dot" onclick="currentSlide(1)"></span>
+            <span class="slideshow-dot" onclick="currentSlide(2)"></span>
+            <span class="slideshow-dot" onclick="currentSlide(3)"></span>
+            <span class="slideshow-dot" onclick="currentSlide(4)"></span>
         </div>
     </body>
 </html>

@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 ul {
@@ -8,7 +9,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #fff;
+    background-color: white;
 }
   
 li {
@@ -62,15 +63,17 @@ li a {
     margin: 0; /* Important for vertical align on mobile phones */
 }
 
-.navbar ul li a:hover:after {
-    content: '';
+.navbar ul li a:hover, .dropbtn:hover{
+    /* content: '';
     position: absolute;
     width: 100%;
     height: 2px;
     bottom: 0;
     left: 0;
     background-color: #0087ca;
-    transform-origin: bottom right;
+    transform-origin: bottom right; */
+    color: white;
+    background-color: #111;
 }
 
 /* Dropdown content (hidden by default) */
@@ -81,6 +84,7 @@ li a {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    border-radius: 5px;
 }
 
 /* Links inside the dropdown */
@@ -97,6 +101,7 @@ li a {
 .dropdown-content a:hover {
     color: white;
     background-color: #111;
+    border-radius: 5px;
 }
 
 /* Show the dropdown menu on hover */
@@ -104,8 +109,9 @@ li a {
     display: block;
 }
 
+/* Banner */
 .banner {
-    background: linear-gradient(45deg, rgba(167, 58, 218, 0.85) 0%, rgba(221, 86, 149, 0.85) 100%),
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%),
     url('img/critter-arena.jpeg');
     width: 100%;
     height: 100vh;
@@ -113,6 +119,7 @@ li a {
     background-size: cover;
 }
 
+/* Banner Text */
 .banner .banner-text{
     font-family: 'Roboto', sans-serif;
     font-size: 100px;
@@ -126,24 +133,125 @@ li a {
     left: 10%;
 }
 
+/* Banner Subtitle */
 .banner .banner-text h4{
     color:#ca2bc2;
     -webkit-text-stroke: 1px #fff;
     -webkit-text-fill-color: #ca2bc2;
 }
 
+/* Banner Title */
 .banner .banner-text h1{
     color: #fff;
 }
 
+/* Info Paragraph */
 .info {
     max-width: 750px;
     margin: 100px auto;
     font-size: 1.125em;
 }
-  
-.info .corgi {
+
+/* Info Image */
+.info .labrador {
     float: left;
     margin: 0 0.5em 0.5em 0;
     line-height: 0;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+  
+/* Hide the images by default */
+.slideshow {
+    display: none;
+}
+
+.slideshow img {
+    vertical-align: mi;
+}
+  
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+  
+/* Caption text */
+.slideshow-text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+  
+/* Number text (1/3 etc) */
+.slideshow-numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+  
+/* The dots/bullets/indicators */
+.slideshow-dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.slideshow-dot-active, .slideshow-dot:hover {
+    background-color: #717171;
+}
+  
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
