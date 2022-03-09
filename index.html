@@ -11,7 +11,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <script src="script.js"></script> 
         <header>
             <div class="navbar">
                 <ul>
@@ -52,22 +51,22 @@
         <div class="slideshow-container">
             <div class="slideshow fade">
                 <div class="slideshow-numbertext">1 / 4</div>
-                <img src="img/Slideshow/img1.jpg" style="width:100%">
+                <img src="img/Slideshow/img1.jpg">
                 <div class="slideshow-text">Dog</div>
             </div>
             <div class="slideshow fade">
                 <div class="slideshow-numbertext">2 / 4</div>
-                <img src="img/Slideshow/img2.jpg" style="width:100%">
+                <img src="img/Slideshow/img2.jpg">
                 <div class="slideshow-text">Cat</div>
             </div>
             <div class="slideshow fade">
                 <div class="slideshow-numbertext">3 / 4</div>
-                <img src="img/Slideshow/img3.jpg" style="width:100%">
+                <img src="img/Slideshow/img3.jpg">
                 <div class="slideshow-text">Cat</div>
             </div>
             <div class="slideshow fade">
                 <div class="slideshow-numbertext">4 / 4</div>
-                <img src="img/Slideshow/img4.jpg" style="width:100%">
+                <img src="img/Slideshow/img4.jpg">
                 <div class="slideshow-text">Dog</div>
             </div>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -80,5 +79,35 @@
             <span class="slideshow-dot" onclick="currentSlide(3)"></span>
             <span class="slideshow-dot" onclick="currentSlide(4)"></span>
         </div>
+        <script>
+            var slideIndex = 1;
+            showSlides(1);
+
+            // Next/previous controls
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("slideshow");
+                var dots = document.getElementsByClassName("slideshow-dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" slideshow-dot-active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " slideshow-dot-active";
+            }
+        </script>
     </body>
 </html>
