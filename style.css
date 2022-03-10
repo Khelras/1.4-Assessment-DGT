@@ -10,10 +10,16 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: white;
+    float: right;
 }
   
 li {
     float: left;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
 }
   
 li a {
@@ -47,7 +53,7 @@ li a {
 
 /* The dropdown container */
 .dropdown {
-    float: left;
+    float: right;
     overflow: hidden;
 }
 
@@ -85,6 +91,8 @@ li a {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     border-radius: 5px;
+    right: 4px;
+    left: auto;
 }
 
 /* Links inside the dropdown */
