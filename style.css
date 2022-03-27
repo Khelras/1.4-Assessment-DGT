@@ -268,3 +268,23 @@ li a {
     from {opacity: .4}
     to {opacity: 1}
 }
+
+/* Footer */
+.footer {
+    margin-top: 100px;
+    background: linear-gradient(45deg, rgb(219, 110, 186) 100%, rgb(218, 116, 218) 100%);
+    position: relative;
+}
+
+/* Footer Icons */
+.footer .icons{
+    border: 10px solid transparent;
+    text-align: right;
+    margin-right: 32px;
+}
+
+/* Footer Icon Images */
+.footer a img {
+    width: 64px;
+    height: auto;
+}
