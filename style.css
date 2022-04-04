@@ -5,16 +5,16 @@
 }
 
 ul {
-    list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: violet;
-    float: right;
+    background-color: cornflowerblue;
 }
   
 li {
-    float: left;
+    text-align: center;
+    display: inline-block;
+    list-style-type: none;
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     -ms-transition: all 0.2s;
@@ -23,30 +23,31 @@ li {
 }
   
 li a {
-    display: block;
+    text-align: center;
+    display: inline-block;
     color: white;
-    text-align: left;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 /* Navbar container */
 .navbar {
+    text-align: center;
     overflow: hidden;
-    background-color: violet;
+    background-color: cornflowerblue;
     font-family: 'Nunito', sans-serif;
     font-size: small;
 }
 
 /* Links inside the navbar */
 .navbar a {
+    text-align: center;
     display: inline-block;
     position: relative;
     color: #0087ca;
     font-size: 16px;
     color: white;
     font-size: 150%;
-    text-align: right;
     padding: 14px 16px;
     text-decoration: none;
 }
@@ -69,7 +70,7 @@ li a {
     margin: 0; /* Important for vertical align on mobile phones */
 }
 
-.navbar ul li a:hover, .dropbtn:hover{
+.navbar ul li a:hover, .active{
     /* content: '';
     position: absolute;
     width: 100%;
@@ -79,42 +80,7 @@ li a {
     background-color: #0087ca;
     transform-origin: bottom right; */
     color: black;
-    background-color: white;
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: violet;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    border-radius: 5px;
-    right: 4px;
-    left: auto;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-    color: black;
-    background-color: white;
-    border-radius: 5px;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
+    background-color: darkcyan;
 }
 
 /* Home Banner */
@@ -163,9 +129,9 @@ li a {
 
 /* Banner Subtitle */
 .banner-text h4{
-    color: violet;
+    color: cornflowerblue;
     -webkit-text-stroke: 1px #fff;
-    -webkit-text-fill-color: violet;
+    -webkit-text-fill-color: cornflowerblue;
 }
 
 /* Banner Title */
@@ -300,7 +266,7 @@ li a {
 
 /* Footer */
 .footer {
-    background: violet;
+    background: cornflowerblue;
     padding: 50px;
     position: relative;
     display: grid;
