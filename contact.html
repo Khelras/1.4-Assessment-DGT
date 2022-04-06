@@ -29,6 +29,7 @@
             </div>
         </div>
         <div class="form-container">
+            <script src="scripts/form-script.js"></script>
             <form action="action_page.php">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="fullname" placeholder="e.g. John Doe">
@@ -42,7 +43,7 @@
                 <label for="description">Description</label>
                 <textarea id="description" name="description" placeholder="description.." style="height:200px"></textarea>
             
-                <a href="formSubmission.html"><input type="button" value="Submit"></a>
+                <input type="reset" value="Submit" onclick="returnForm()">
             </form>
           </div>
         <div class="footer">
